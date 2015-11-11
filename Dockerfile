@@ -1,4 +1,5 @@
-FROM qnib/u-consul
+### QNIBTerminal Image
+FROM qnib/u-consul:14.04
 
 RUN apt-get install -y dnsutils vim nmap
 

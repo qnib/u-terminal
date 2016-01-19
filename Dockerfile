@@ -1,6 +1,8 @@
 FROM qnib/u-consul
 
-RUN apt-get install -y dnsutils vim nmap
+RUN echo "2016-01-19.1" && \
+    apt-get update && \
+    apt-get install -y dnsutils vim nmap
 
 # dependencies needed by costum scripts (e.g. osquery)
 RUN apt-get install -y python-pip libyaml-dev python-dev 

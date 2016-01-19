@@ -17,4 +17,4 @@ ADD etc/consul.d/diamond.json /etc/consul.d/
 #ADD opt/qnib/bin/watch_psutil.py /opt/qnib/bin/
 #ADD etc/supervisord.d/watchpsutil.ini /etc/supervisord.d/
 # osqueryi
-
+RUN cp /usr/share/zoneinfo/Europe/Berlin /etc/localtime

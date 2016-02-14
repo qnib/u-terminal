@@ -1,4 +1,4 @@
-FROM qnib/u-consul
+FROM qnib/u-syslog
 
 RUN echo "2016-01-19.1" && \
     apt-get update && \

@@ -1,7 +1,8 @@
 ### QNIBTerminal Image
 FROM qnib/u-consul:14.04
 
-RUN apt-get install -y dnsutils vim nmap
+RUN apt-get update \
+ && apt-get install -y dnsutils vim nmap
 
 # dependencies needed by costum scripts (e.g. osquery)
 RUN apt-get install -y python-pip libyaml-dev python-dev 
